@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import HolaMundo from  './components/HolaMundo';
+import Button from './components/Button'; 
 import reportWebVitals from './reportWebVitals';
+
+const tests = {
+  text: 'click',
+  text2: 'click 2',
+  text3: 'click 3',
+}
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <HolaMundo />
+    <Button {...tests} />
   </React.StrictMode>,
   document.getElementById('root')
 );
